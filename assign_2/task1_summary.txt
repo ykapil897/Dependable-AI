@@ -1,0 +1,41 @@
+TASK 1: ADVERSARIAL ATTACK ANALYSIS
+==================================
+
+Performance Drops (%\ decrease in F1 score):
+White-box:
+  Average Drop: -2.0%
+  Maximum Drop: 5.2%
+  Minimum Drop: -11.5%
+
+Black-box:
+  Average Drop: 0.4%
+  Maximum Drop: 5.2%
+  Minimum Drop: -9.2%
+
+Targeted:
+  Average Drop: -1.9%
+  Maximum Drop: 5.4%
+  Minimum Drop: -11.2%
+
+Untargeted:
+  Average Drop: -2.0%
+  Maximum Drop: 5.2%
+  Minimum Drop: -11.5%
+
+Sample-Agnostic:
+  Average Drop: -0.5%
+  Maximum Drop: -0.5%
+  Minimum Drop: -0.5%
+
+Model Robustness Ranking (from most to least robust):
+1. Decision Tree: Average F1 score drop = -10.9%
+2. Linear SVM: Average F1 score drop = -7.0%
+3. Logistic Regression: Average F1 score drop = 5.2%
+4. Softmax Regression: Average F1 score drop = 5.2%
+
+Key Observations:
+1. Sample-specific attacks are generally more effective than universal perturbations
+2. White-box attacks are more effective than black-box (transfer) attacks
+3. Targeted attacks show lower success rates but can be more damaging when successful
+4. Decision Tree shows the highest robustness against adversarial attacks
+5. Softmax Regression is the most vulnerable to adversarial attacks

@@ -1,0 +1,5 @@
+Epsilon,F1 Score,Attack Type,Model
+0.1,0.3609467455621302,Sample-Specific,Linear SVM
+0.5,0.3609467455621302,Sample-Specific,Linear SVM
+0.1,0.347595818815331,Sample-Agnostic,Linear SVM
+0.5,0.3475231658886644,Sample-Agnostic,Linear SVM
